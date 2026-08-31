@@ -2,7 +2,7 @@
 
 A backend authentication API built from scratch to learn professional backend engineering practices — layered architecture, JWT authentication with refresh token rotation, centralized error handling, integration testing, and CI/CD.
 
-[![Tests](https://github.com/GevorgKhachatryann/fastify-backend-learning/actions/workflows/test.yml/badge.svg)](https://github.com/<your-username>/fastify-backend-learning/actions/workflows/test.yml)
+[![Tests](https://github.com/GevorgKhachatryann/fastify-backend-learning/actions/workflows/test.yml/badge.svg)](https://github.com/GevorgKhachatryann/fastify-backend-learning/actions/workflows/test.yml)
 
 ## Tech Stack
 
