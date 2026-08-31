@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: learning-postgres
+    environment:
+      POSTGRES_USER: gevorg
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: learning_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  postgres-test:
+    image: postgres:16
+    container_name: learning-postgres-test
+    environment:
+      POSTGRES_USER: gevorg
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: learning_test_db
+    ports:
+      - "5433:5432"
+
+volumes:
+  pgdata:
