@@ -104,9 +104,5 @@ This project was my hands-on introduction to backend engineering beyond QA, buil
 - **Integration testing** — using Fastify's `inject()` to test the full stack (routing → validation → business logic → real database) without needing a running server, and hitting a genuine concurrency bug (parallel test files sharing one database) that taught me about test isolation and `fileParallelism`
 - **CI/CD** — setting up GitHub Actions to spin up a temporary Postgres service, generate the Prisma client, run migrations, and run the full test suite on every push, plus debugging a "works locally, fails in CI" issue (the generated Prisma client wasn't committed and CI never regenerated it)
 
-## Known Technical Debt / Not Yet Implemented
 
-- API security hardening (rate limiting, CORS config, security headers) — deprioritized in favor of testing/docs/CI
-- No reuse-detection on refresh tokens (rotation deletes+reissues, but doesn't yet revoke *all* tokens for a user on detected reuse)
-- No structured/production-grade logging (currently using Fastify's default Pino logger as-is)
 
